@@ -2,7 +2,7 @@ CartoonInterpolation
 ====================
 
 For Assignment 5, I've decided to implement cartoon interpolation separate from 
-Scotty3D; although, I will still be using C++ and OpenGL.
+Scotty3D. It will be written in C++ using DirectX (Windows-specific code). 
 
 Plan:
 
