@@ -255,7 +255,8 @@ void LBS::UpdatePositions(VERTEX_2D_TEX* buffer, VERTEX_2D_TEX* data, int size)
 		D3DXMatrixRotationZ(&mat3, atan2(axis.y, axis.x) - atan2(caxis.y, caxis.x));
 		D3DXMatrixTranslation(&mat4, vh0.pos.x, vh0.pos.y, 0.0f);
 
-		bone_trans.push_back(mat1 * mat2 * mat3 * mat4);
+		//bone_trans.push_back(mat1 * mat2 * mat3 * mat4);
+		bone_trans.push_back(mat1 * mat2 * mat4);
 	}
 
 	for (int i = 0; i < size; i++)

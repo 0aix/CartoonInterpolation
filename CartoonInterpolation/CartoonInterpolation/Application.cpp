@@ -136,6 +136,8 @@ namespace Application
 
 		float w = desc.Width;
 		float h = desc.Height;
+		float cx = (SCREEN_WIDTH - desc.Width) / 2.0f;
+		float cy = (SCREEN_HEIGHT - desc.Height) / 2.0f;
 
 		WORD v0, v1, v2;
 
@@ -153,6 +155,8 @@ namespace Application
 					vert.y = h - vert.y;
 					vert.u = vert.x / w;
 					vert.v = vert.y / h;
+					vert.x += cx;
+					vert.y += cy;
 					vertices.push_back(vert);
 					break;
 				case 'f':
